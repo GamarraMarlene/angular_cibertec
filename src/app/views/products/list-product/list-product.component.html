@@ -1,0 +1,22 @@
+<div>
+    <button (click)="onSort('name')">Ordenar por nombre</button>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <td scope = "col">#</td>
+        <td scope = "col">Name</td>
+        <td scope = "col">Acciones</td>
+    </thead>
+    <tbody>
+        <tr appHover *ngFor= "let prod of AllProducts; let i= index;">
+            <th scope="row">{{i+1}}</th>
+            <td>{{prod.name | shortText: 10 }}</td>
+            <td>
+                <button class="btn btn-sm btn-info" type="button">Dehabilitar</button>
+                <button class="btn btn-sm btn-primary" type="button">Ver Detalle</button>
+                <button class="btn btn-sm btn-danger" (click)="onRemove(prod.id)" type="button">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
