@@ -3,11 +3,7 @@ import {RouterModule} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  template: `
-  <app-nav></app-nav>
-  <app-list-product></app-list-product>
-  <app-footer></app-footer>
-  `,
+  templateUrl:'app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {

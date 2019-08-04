@@ -4,6 +4,9 @@ import { ListProductComponent } from './list-product/list-product.component';
 import { HoverDirective } from './shared/directive/hover.directive';
 import { SortPipes } from './shared/pipes/sort.pipes';
 import { ShortTextPipe } from './shared/pipes/short-text.pipes';
+import { CreateProductComponent } from './create-product/create-product.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,10 +14,14 @@ import { ShortTextPipe } from './shared/pipes/short-text.pipes';
   declarations: [
     ListProductComponent,
     HoverDirective,
-    ShortTextPipe
+    ShortTextPipe,
+    CreateProductComponent,
+    EditProductComponent
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[
     ListProductComponent
