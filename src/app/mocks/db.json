@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "name": "xelular 1"
+    },
+    {
+      "id": 102,
+      "name": "Laptop 1"
+    },
+    {
+      "name": "Text 1",
+      "id": 103
+    },
+    {
+      "name": "Text 1",
+      "id": 104
+    }
+  ]
+}

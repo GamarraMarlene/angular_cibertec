@@ -8,4 +8,5 @@ import {RouterModule} from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-lab01';
+  year: number =(new Date()).getFullYear();
 }

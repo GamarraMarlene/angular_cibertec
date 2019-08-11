@@ -7,6 +7,8 @@ import { ShortTextPipe } from './shared/pipes/short-text.pipes';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { RouterModule } from '@angular/router';
+import { ProductsService } from './shared/services/products.service';
+import { ProductFromComponent } from './shared/form/product-form.components';
 
 
 
@@ -16,7 +18,8 @@ import { RouterModule } from '@angular/router';
     HoverDirective,
     ShortTextPipe,
     CreateProductComponent,
-    EditProductComponent
+    EditProductComponent,
+    ProductFromComponent
     
   ],
   imports: [
@@ -27,7 +30,8 @@ import { RouterModule } from '@angular/router';
     ListProductComponent
   ],
   providers:[
-    SortPipes
+    SortPipes,
+    ProductsService
   ]
 
 })
